@@ -104,16 +104,11 @@ CreditRisk AI Suite/
 ├── data_generation/               # Data generation module
 │   ├── data_generator.py          # Main data generation script
 │   ├── install_data_generator_deps.py  # Dependency installer
-│   ├── DATA_GENERATOR_README.md   # Detailed documentation
 │   └── README.md                  # Module overview
 ├── setup_environment.py           # Environment setup script
 ├── env_example.txt                # Environment template
 ├── requirements.txt               # Python dependencies
 ├── README.md                      # Project overview
-├── COMPREHENSIVE_DOCUMENTATION.md # Complete project documentation
-├── SEQUENCE_DIAGRAMS.md           # System sequence diagrams
-├── PRESENTATION_VISUALS.md        # Presentation visuals
-├── PRESENTATION_SCRIPT.md         # Presentation script
 ├── analytics.db                   # SQLite analytics database
 └── .gitignore                     # Git ignore rules
 ```
