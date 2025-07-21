@@ -1,0 +1,183 @@
+# CreditRisk AI Suite - Environment Configuration
+# Copy this file to .env and fill in your actual values
+
+# =============================================================================
+# DATABASE CONFIGURATION
+# =============================================================================
+
+# MySQL Database Configuration (Primary)
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=credit_risk_analysis
+DB_USER=your_mysql_username
+DB_PASSWORD=your_mysql_password
+
+# SQLite Database Configuration (Analytics - Fallback)
+SQLITE_DB_PATH=analytics.db
+
+# Database Connection Pool Settings
+DB_POOL_SIZE=10
+DB_POOL_TIMEOUT=30
+DB_POOL_RECYCLE=3600
+
+# =============================================================================
+# AI/OPENAI CONFIGURATION
+# =============================================================================
+
+# OpenAI API Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4
+OPENAI_TEMPERATURE=0.7
+OPENAI_MAX_TOKENS=4000
+
+# CrewAI Configuration
+CREWAI_MODEL=gpt-4
+CREWAI_VERBOSE=True
+CREWAI_DEBUG=False
+
+# =============================================================================
+# STREAMLIT CONFIGURATION
+# =============================================================================
+
+# Streamlit Server Settings
+STREAMLIT_SERVER_PORT=8501
+STREAMLIT_SERVER_ADDRESS=localhost
+STREAMLIT_SERVER_HEADLESS=false
+STREAMLIT_SERVER_ENABLE_CORS=false
+STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION=true
+STREAMLIT_SERVER_ENABLE_STATIC_SERVING=true
+
+# Streamlit Browser Settings
+STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+
+# =============================================================================
+# PERFORMANCE MONITORING
+# =============================================================================
+
+# Performance Monitor Settings
+ENABLE_PERFORMANCE_MONITORING=true
+MONITORING_INTERVAL=30
+LOG_LEVEL=INFO
+
+# System Resource Monitoring
+ENABLE_CPU_MONITORING=true
+ENABLE_MEMORY_MONITORING=true
+ENABLE_DISK_MONITORING=true
+
+# =============================================================================
+# APPLICATION SETTINGS
+# =============================================================================
+
+# Application Configuration
+APP_NAME="CreditRisk AI Suite"
+APP_VERSION="1.0.0"
+APP_ENVIRONMENT=development  # development, staging, production
+
+# Security Settings
+SECRET_KEY=your_secret_key_here
+ENABLE_DEBUG_MODE=false
+
+# File Upload Settings
+MAX_FILE_SIZE=10485760  # 10MB in bytes
+ALLOWED_FILE_TYPES=pdf,csv,json,txt
+
+# =============================================================================
+# LOGGING CONFIGURATION
+# =============================================================================
+
+# Logging Settings
+LOG_LEVEL=INFO
+LOG_FILE=logs/app.log
+LOG_FORMAT=%(asctime)s - %(name)s - %(levelname)s - %(message)s
+LOG_MAX_SIZE=10485760  # 10MB
+LOG_BACKUP_COUNT=5
+
+# =============================================================================
+# EXPORT AND REPORTING
+# =============================================================================
+
+# Report Generation Settings
+ENABLE_PDF_REPORTS=true
+ENABLE_JSON_EXPORT=true
+ENABLE_CSV_EXPORT=true
+REPORT_TEMPLATE_PATH=templates/
+
+# Analytics Settings
+ANALYTICS_RETENTION_DAYS=365
+ENABLE_DATA_ANONYMIZATION=false
+
+# =============================================================================
+# INTEGRATION SETTINGS
+# =============================================================================
+
+# External API Settings (if needed)
+EXTERNAL_API_URL=
+EXTERNAL_API_KEY=
+EXTERNAL_API_TIMEOUT=30
+
+# Email Settings (for notifications)
+SMTP_SERVER=
+SMTP_PORT=587
+SMTP_USERNAME=
+SMTP_PASSWORD=
+ENABLE_EMAIL_NOTIFICATIONS=false
+
+# =============================================================================
+# DEVELOPMENT SETTINGS
+# =============================================================================
+
+# Development Mode Settings
+DEBUG_MODE=false
+ENABLE_HOT_RELOAD=true
+SHOW_DEBUG_INFO=false
+
+# Testing Settings
+ENABLE_TEST_MODE=false
+TEST_DATABASE_URL=sqlite:///test.db
+
+# =============================================================================
+# DEPLOYMENT SETTINGS
+# =============================================================================
+
+# Production Settings
+ENABLE_HTTPS=false
+SSL_CERT_PATH=
+SSL_KEY_PATH=
+
+# Load Balancer Settings
+ENABLE_LOAD_BALANCER=false
+LOAD_BALANCER_URL=
+
+# =============================================================================
+# CUSTOMIZATION SETTINGS
+# =============================================================================
+
+# UI Customization
+THEME_COLOR=#667eea
+SECONDARY_COLOR=#764ba2
+ENABLE_DARK_MODE=false
+
+# Feature Flags
+ENABLE_ADVANCED_ANALYTICS=true
+ENABLE_REAL_TIME_MONITORING=true
+ENABLE_DOCUMENT_GENERATION=true
+ENABLE_EXPORT_FEATURES=true
+
+# =============================================================================
+# NOTES
+# =============================================================================
+
+# Instructions:
+# 1. Copy this file to .env
+# 2. Replace all placeholder values with your actual configuration
+# 3. Never commit the .env file to version control
+# 4. Keep your API keys and passwords secure
+# 5. Use different values for development, staging, and production
+
+# Required for basic functionality:
+# - OPENAI_API_KEY (for AI features)
+# - DB_HOST, DB_USER, DB_PASSWORD (for database features)
+# - SECRET_KEY (for security)
+
+# Optional but recommended:
+# - All other settings for full functionality 

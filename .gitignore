@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+
+# Virtual environment
+venv/
+env/
+*.env
+.history/
+.pytest_cache/
+.vscode/
+
+# IDEs
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
+.Trashes
+Thumbs.db
+
+# Data
+*.sqlite3
+*.db
+*.csv
+*.json
+*.log
+*.dat 

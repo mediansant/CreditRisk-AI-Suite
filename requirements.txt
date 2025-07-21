@@ -1,0 +1,11 @@
+streamlit
+crewai
+openai
+mysql-connector-python
+pandas
+numpy
+faker
+plotly
+matplotlib
+pytest
+httpx
