@@ -27,12 +27,6 @@ A comprehensive, AI-powered credit risk analysis application built with Streamli
 - **Configurable Volumes**: Adjustable data generation amounts
 - **Database Integration**: Direct MySQL connection with validation
 
-### 📄 Document Generation
-- **PDF Reports**: Professional formatted reports using ReportLab
-- **JSON Export**: Structured data export for external systems
-- **Markdown Summary**: Readable text summaries
-- **CSV Export**: Data for external analysis
-
 ### 🎨 Enhanced UI/UX
 - **Modern Design**: Gradient backgrounds with glassmorphism effects
 - **Responsive Layout**: Mobile-friendly interface
@@ -267,13 +261,6 @@ export DB_HOST=your_db_host
 export DB_PASSWORD=your_db_password
 export OPENAI_API_KEY=your_openai_key
 ```
-
-## Documentation
-
-- [Application Documentation](APPLICATION_DOCUMENTATION.md) - Complete application guide
-- [Integration Summary](INTEGRATION_SUMMARY.md) - Integration and enhancement details
-- [Enhanced Results Documentation](ENHANCED_RESULTS_DOCUMENTATION.md) - Results page features
-- [Enhanced Analytics Documentation](ENHANCED_ANALYTICS_DOCUMENTATION.md) - Analytics dashboard features
 
 ## Contributing
 
